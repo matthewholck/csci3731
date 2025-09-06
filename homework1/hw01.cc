@@ -1,20 +1,27 @@
 #include <cstdio>
+#include <math.h>
 
-int getX (int x, int y, int a){
+float getX (float x, float y, float a){
     return (x*x) - (y*y) + a;
 }
 
-int getY (int x, int y, int b){
-    return 2*x*y + b;
+float getY (float x, float y, float b){
+    return 2*(x*y) + b;
 }
 
 int main(int argc, char** argv) {
     
-    int x=0, y=0;
-    float a=0.1, b=0.2
+    float x=0.0, y=0.0;
+    float a=0.1, b=0.2;
 
-    for(i=0; i<10000000; i++){
-        try
+    for(int i=0; i<1000000; i++){
+        if(isinf(getX(x, y, a)) || isinf(getY(getX(x, y, b), y, b))) {
+            printf("%d", i);
+            break;
+        }
+        x = getX(x, y, a);
+        y = getY(x, y, b);
     }
-    
+
+    printf("X: %f, Y: %f\n", x, y);
 }

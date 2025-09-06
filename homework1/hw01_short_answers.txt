@@ -1,0 +1,9 @@
+1. This would be a bad idea because it will do a recurssive remove files/directories from the working directory, and rm does not send files to trash, it removes it completely from the machine.
+
+3. Compiling translates the code to machine code, linking creates the executable for the code.
+
+10. Line 1, sum is not assigned a value and can be any value.
+
+11. Line 2, uses = operator instead of ==
+
+12. Line 2, uses = operator instead of ==
