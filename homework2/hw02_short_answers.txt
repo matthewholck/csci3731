@@ -1,5 +1,5 @@
 2. A function declaration makes the compiler aware of that function's name, the definition is the code to run with that function.
 3. C/C++ needs declarations because it only does a single pass through the code, meaning that if it sees a function call before it's declaration, and error will be thrown. This does not happen in Java because two passes through the code are made in compiling.
-4. The C preprocessor
-6. whhhhh
-8. It is not a variable, it is a constant.
+4. The C preprocessor runs before the first pass of the code, following directives prefaced by the "#" operator that perform simple functions like text manipulation.
+6. Header files are preprocessed and ported to the c file before compilation and do not need the "g++ -c" command.
+8. It is not a variable, it is a pre-processor macro defining something like a constant.
