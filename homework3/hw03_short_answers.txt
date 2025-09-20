@@ -1,0 +1,9 @@
+6. The & operator retrieve the pointer of a variable, and the * (dereference) operator gets the value from the pointer.
+9. Describe what each of the following declare:
+   a) int* a; // Declares pointer a that points to an int. 
+   b) const int b; // Declares int b a constant (immutable)
+   c) const int* c; // Declares pointer c that points to a constant int 
+   d) int* const d; // Declares constant pointer d that points to an int
+   e) const int* const e; // Declares constant pointer e that points to a constant int
+12. Variable x2 goes out of scope and is deleted.
+13. Line 9
