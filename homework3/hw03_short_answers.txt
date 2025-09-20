@@ -5,5 +5,12 @@
    c) const int* c; // Declares pointer c that points to a constant int 
    d) int* const d; // Declares constant pointer d that points to an int
    e) const int* const e; // Declares constant pointer e that points to a constant int
-12. Variable x2 goes out of scope and is deleted.
+12. Variable x2 goes out of scope and is deleted. 
+Here is the fixed code:
+void powers(double x, double* x2_ptr, double* x3_ptr) {
+    *x2_ptr = x * x;
+    *x3_ptr = x * x * x;
+}
+Instead of pointer return function, make a void function that overwrites both pointers.
+Use a void function and the 
 13. Line 9
