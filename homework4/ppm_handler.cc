@@ -15,7 +15,7 @@ void readPPM(char* magic, int* x, int* y, int* pixel, unsigned char** array) {
 }
 
 void writePPM(const char *filename, int x, int y, int pixel, const unsigned char *data) {
-    FILE *fp = fopen(filename, "wb"); // "wb" = write binary
+    FILE *fp = fopen(filename, "wb"); 
 
     fprintf(fp, "P6\n%d %d\n%d\n", x, y, pixel);
     fwrite(data, sizeof(unsigned char), x * y, fp);
