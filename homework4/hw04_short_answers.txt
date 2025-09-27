@@ -2,5 +2,5 @@
 2. Another way to print list[6] would be pointing to list + 6
 5. To get a subarray of third to sixth elements from an array with 128 indexes using function:
 void f(int* array, int length) would be to pass arguments a[2] and length=4
-6.  The copy char array allocates eight elements of memory, what will happen is once copy is run on string 'hello', the last element of allocation is unknown and can be exploited to insert malicious input. TO fix this you would in
+6.  The copy char array does not close with '\0' meaning that its remaining indexes that were not copied from string will hold and print garbage. To fix this afer copying stirng, add the '\0'.
 13. Data allocated to the stack is only allocated to the local data it is working with. Heap data is allocated until explicitly deleted.
