@@ -1,0 +1,2 @@
+1. The problem with two-dimensional arrays in C/C++ is that its native support is not friendly to functions. For example, arguments for 2d array in functions are not dynamic in index size, and are instead static to one x by y.
+2. There is the numerical recipes trick which is the most efficient by leveragin an array of pointers to a flat array. Then there is the way by simpling accessing via width size * row + index. 
