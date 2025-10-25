@@ -1,0 +1,22 @@
+1. 
+Libraries are good for avoiding the overhead of recreating an existing functionality of code you need. It let's you use it without the effort of implementing the source code directly into your project or linking all the object files that come with it.
+2.
+The two types of libraries are statiic libraries and shared object libraries. Static libraries have its object files become art of the executable. Shared object libraries call the necessary objects at runtime making shared object libraries more compact in terms of file size.
+﻿﻿﻿3.
+It is often better to use package managers instead of compiling it source because of all the overhead need of compiling someone else's code. Their code might be specific to their own projects in convention and also might have several dependenices that you will need to search for,package managers handle all of that for you. It may be better to compile it yourself if it is a small source code with little dependencies. It would also be better if you need to implement similar functionalities but need to refactor the code for any specifications your project may have that the source code doesn't answer.
+4.
+GXX = g++
+CFLAGS = -Wall -Werror -O2 -I/usr/local/include
+
+
+# Default build rule
+all: main
+
+main: main.cc
+	$(GXX) $(CFLAGS) -o main main.cc -L/usr/local/lib -lpng
+
+clean:
+	rm -f *.o
+
+5.
+A struct is a class with no methods and only public data members.
