@@ -1,0 +1,17 @@
+1. position and velocity are not initialized. 
+Fix: 
+double position = 0.0;
+double velocity = 0.0;
+2. Arguments are ints instead of doubles. this.position should be this->position instead (same for velocity). Missing semicolon at the end.
+Projectile(double position, double velocity) {
+    this->position = position;
+    this->velocity = velocity;
+};
+3.
+  a) method t
+  b)
+  c)
+  d)
+  e)
+5. References do not give you the numerical value of the memory address and references cannot point to diff
+10.  
