@@ -8,10 +8,10 @@ Projectile(double position, double velocity) {
     this->velocity = velocity;
 };
 3.
-  a) method t
-  b)
-  c)
-  d)
-  e)
-5. References do not give you the numerical value of the memory address and references cannot point to diff
-10.  
+  a) method returns a pointer to an int and takes an argument arg, a pointer to an int
+  b) method returns a pointer to a constant int and takes an argument arg, a pointer to an int
+  c) method returns a constant pointer to a constant and takes an argument arg, a pointer to an int
+  d) method returns a constant pointer to a constant and takes an argument arg, a pointer to a constant int
+  e) constant method returns a constant pointer to a constant and takes an argument arg, a pointer to a constant int
+5. References do not give you the numerical value of the memory address and references cannot point to different addresses.
+10. Const keyword to method parametes doesn't make any functional difference to non-pointers/references because the function makes a copy of the parameter not affecting what was passed.
