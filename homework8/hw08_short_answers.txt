@@ -1,8 +1,20 @@
-2. Ownership is a convention that C++ programmers use to keep track of what is responsible for handling specific memory.
-5. 
-8. Copying an object copies the bytes from one variable's memory to another variable's memory. Moving handles transefering data from a temp variable to the targeted variable.
-12. Forward declarations defines an object in another object via pointer since the compiler does not yet know about the object.
-13. What is wrong with the following code and how would you fix it:
+2. Ownership is a convention that C++ programmers use to keep track of what is responsible for handling specific memory like deletion.
+5. What is wrong with the following code?
+
+Car& Factory::makeACar() {
+
+
+
+  Car c;
+  return c;
+
+}
+
+c is made on the stack in the function, and its reference will go out of scope after the return.
+
+8. Copy is deep copy to lvalue, move omits a deep copy while transferring rvalue and deleting it.
+12. Forward declaration tells the compiler a class exists within another class without its full declaration.
+13. What is wrong with the following code and how would you fix it?
 
 class Part;
 
