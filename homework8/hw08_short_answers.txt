@@ -1,0 +1,20 @@
+2. Ownership is a convention that C++ programmers use to keep track of what is responsible for handling specific memory.
+5. 
+8. Copying an object copies the bytes from one variable's memory to another variable's memory. Moving handles transefering data from a temp variable to the targeted variable.
+12. Forward declarations defines an object in another object via pointer since the compiler does not yet know about the object.
+13. What is wrong with the following code and how would you fix it:
+
+class Part;
+
+class Whole {
+
+private:
+  Part p;
+
+public:
+  Whole();
+  virtual ~Whole();
+
+};
+
+The file does not know about Part object yet so you need to change it to Part* p;
