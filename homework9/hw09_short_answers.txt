@@ -1,0 +1,33 @@
+2. Why would you mark a method virtual? Why wouldn't you?
+
+You would mark a method virtual if you need the method to override some method in its super class. You would not do this if you don't need an override
+as virtual create vtable that cause more overhead in runtime to process, slowing down your code.
+
+4. What is the difference between a dynamic cast and a static cast? Why would you use one over the other?
+
+Dynamic cast checks an object cast at run time, while static does at compilation. You would use dynamic cast in your code to avoid complications of an object changing at run time. You would use static cast if you're sure that object will not change AND if it is performance critical of your code.
+need to do anything at run time.
+
+6. Suppose you had a Fruit base class and a Banana subclass. Supposed you have a Banana object declared like this:
+     Banana b;
+   What is the difference between what happens when you pas your Banana to a method declared like this:
+     void eat(Fruit f);
+   vs. one declared like this:
+     void eat(Fruit& f);
+
+void eat(Fruit f) would cause banana to lose its banana-neess since it will expect the fruit class exactly, and not its subclass banana. void eat(Fruit& f) 
+would work as it is looking for a reference to the class fruit, which banana is and banana keeps its banana-ness.
+     
+7. Suppose you have a Rectanlge class, which is a subclass of Quadrilateral, which is a subclass of Shape, Now suppose you have a varibale declared as:
+     Shape* s;
+
+     Write an if statement that determines whether s is actually a pointer to a quadrilateral
+
+if(dynamic_cast<Quadrilateral>(s) != nullptr)
+     
+9. Suppose you have an Exception class. WHat is wrong with the following code and how would you fix it?
+     throw new Exception("Help me, Spock");
+
+Using new creates the Exception on the heap causing memory complications while creating it on the stack cleans up those complications after thrown.
+The fixed code would be:
+   throw Exception("Help me, Spock"); 
