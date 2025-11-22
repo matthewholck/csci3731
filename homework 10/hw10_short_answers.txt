@@ -1,0 +1,5 @@
+1. A template is a specification for how to make a class or function.
+2. Java implements collections as a collection of super classes while C++ implements collections as templates.
+5. An iterator is a class that represents the current element of a collection and lets you step from one element to the next.
+7. Angle brackets in Java determine the casting of objects that will be passed to that class. C++ brackets use a specific class custom-written for the            declared type.
+8. References can't be used in containers becuse they can't be initialized on creation.
